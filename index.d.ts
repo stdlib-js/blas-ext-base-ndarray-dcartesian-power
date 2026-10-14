@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,20 +16,11 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
 
-var ndarraylike2scalar = require( '@stdlib/ndarray-base-ndarraylike2scalar' );
-var numelDimension = require( '@stdlib/ndarray-base-numel-dimension' );
-var getStrides = require( '@stdlib/ndarray-base-strides' );
-var getStride = require( '@stdlib/ndarray-base-stride' );
-var getOffset = require( '@stdlib/ndarray-base-offset' );
-var getData = require( '@stdlib/ndarray-base-data-buffer' );
-var strided = require( '@stdlib/blas-ext-base-dcartesian-power' ).ndarray;
-
-
-// MAIN //
+import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
 * Computes the Cartesian power for a double-precision floating-point ndarray.
@@ -42,8 +33,8 @@ var strided = require( '@stdlib/blas-ext-base-dcartesian-power' ).ndarray;
 *     -   a two-dimensional output ndarray.
 *     -   a zero-dimensional ndarray specifying the power.
 *
-* @param {ArrayLikeObject<Object>} arrays - array-like object containing ndarrays
-* @returns {Object} output ndarray
+* @param arrays - array-like object containing ndarrays
+* @returns output ndarray
 *
 * @example
 * var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
@@ -65,23 +56,9 @@ var strided = require( '@stdlib/blas-ext-base-dcartesian-power' ).ndarray;
 * var bool = ( v === out );
 * // returns true
 */
-function dcartesianPower( arrays ) {
-	var out;
-	var so;
-	var x;
-	var k;
-
-	x = arrays[ 0 ];
-	out = arrays[ 1 ];
-	k = ndarraylike2scalar( arrays[ 2 ] );
-
-	so = getStrides( out, false );
-
-	strided( numelDimension( x, 0 ), k, getData( x ), getStride( x, 0 ), getOffset( x ), getData( out ), so[ 0 ], so[ 1 ], getOffset( out ) ); // eslint-disable-line max-len
-	return out;
-}
+declare function dcartesianPower( arrays: [ float64ndarray, float64ndarray, typedndarray<number> ] ): float64ndarray;
 
 
 // EXPORTS //
 
-module.exports = dcartesianPower;
+export = dcartesianPower;
