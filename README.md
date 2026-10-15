@@ -33,7 +33,7 @@ limitations under the License.
 
 [![NPM version][npm-image]][npm-url] [![Build Status][test-image]][test-url] [![Coverage Status][coverage-image]][coverage-url] <!-- [![dependencies][dependencies-image]][dependencies-url] -->
 
-> Compute the Cartesian power for a double-precision floating-point ndarray.
+> Compute the Cartesian power for a one-dimensional double-precision floating-point ndarray.
 
 <section class="intro">
 
@@ -71,7 +71,7 @@ var dcartesianPower = require( '@stdlib/blas-ext-base-ndarray-dcartesian-power' 
 
 #### dcartesianPower( arrays )
 
-Computes the Cartesian power for a double-precision floating-point ndarray.
+Computes the Cartesian power for a one-dimensional double-precision floating-point ndarray.
 
 ```javascript
 var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
