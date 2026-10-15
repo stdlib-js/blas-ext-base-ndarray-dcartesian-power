@@ -48,7 +48,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@esm/index.mjs';
+import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@v0.0.0-esm/index.mjs';
 ```
 
 #### dcartesianPower( arrays )
@@ -116,7 +116,7 @@ import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-discre
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@esm/index.mjs';
 import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@esm/index.mjs';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@esm/index.mjs';
-import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@esm/index.mjs';
+import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@v0.0.0-esm/index.mjs';
 
 var opts = {
     'dtype': 'float64'
