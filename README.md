@@ -48,6 +48,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-ext-base-ndarray-dcartesian-power/tags). For example,
+
+```javascript
 import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@v0.0.0-deno/mod.js';
 ```
 
@@ -111,7 +116,7 @@ import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-discre
 import zeros from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-zeros@deno/mod.js';
 import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@deno/mod.js';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@v0.0.0-deno/mod.js';
+import dcartesianPower from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-ext-base-ndarray-dcartesian-power@deno/mod.js';
 
 var opts = {
     'dtype': 'float64'
