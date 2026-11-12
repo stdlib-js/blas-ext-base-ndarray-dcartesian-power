@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,18 +16,30 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { float64ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the Cartesian power for a one-dimensional double-precision floating-point ndarray.
+* Computes the Cartesian power for a one-dimensional double-precision floating-point ndarray.
 *
-* @module @stdlib/blas-ext-base-ndarray-dcartesian-power
+* ## Notes
+*
+* -   The function expects the following ndarrays:
+*
+*     -   a one-dimensional input ndarray.
+*     -   a two-dimensional output ndarray.
+*     -   a zero-dimensional ndarray specifying the power.
+*
+* @param arrays - array-like object containing ndarrays
+* @returns output ndarray
 *
 * @example
 * var Float64Vector = require( '@stdlib/ndarray-vector-float64' );
 * var zeros = require( '@stdlib/ndarray-zeros' );
 * var scalar2ndarray = require( '@stdlib/ndarray-from-scalar' );
-* var dcartesianPower = require( '@stdlib/blas-ext-base-ndarray-dcartesian-power' );
 *
 * var x = new Float64Vector( [ 1.0, 2.0 ] );
 * var out = zeros( [ 4, 2 ], {
@@ -44,12 +56,9 @@
 * var bool = ( v === out );
 * // returns true
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function dcartesianPower( arrays: [ float64ndarray, float64ndarray, typedndarray<number> ] ): float64ndarray;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = dcartesianPower;
